@@ -1,7 +1,7 @@
 import urllib
 
 def file_read():
-    with open('/Users/sumankumarsubudhi/Desktop/Udacity/Python Foundation/movie_quotes.txt') as file:
+    with open('quotes.txt') as file:
         file_text = file.read()
         profanity_checker(file_text)
 
