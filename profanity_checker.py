@@ -5,6 +5,7 @@ def file_read():
         file_text = file.read()
         profanity_checker(file_text)
 
+# profanity_checker method opens up the website in background and checks whether the given string has curse word or not.       
 def profanity_checker(some_text):
     website = urllib.urlopen('http://www.wdylike.appspot.com/?q='+some_text)
     profanity_value = website.read()
